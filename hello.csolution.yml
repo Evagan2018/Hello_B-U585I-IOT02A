@@ -33,7 +33,7 @@ solution:
 
     - type: Release
       debug: off
-      optimize: balanced
+      optimize: size
 
   # List related projects.
   projects:
