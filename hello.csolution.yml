@@ -9,6 +9,11 @@ solution:
     - compiler: AC6
   compiler: AC6
 
+  # Project define
+  define:
+    - OS_IDLE_THREAD_NAME: \"Idle\"
+    - OS_TIMER_THREAD_NAME: \"Timer\"
+
   # List the packs that define the device and/or board.
   packs:
     - pack: Keil::STM32U5xx_DFP
@@ -47,8 +52,6 @@ solution:
         - -gdwarf-5
       ASM:
         - -gdwarf-5
-      Link:
-        - --entry=Reset_Handler
 
   # List related projects.
   projects:
